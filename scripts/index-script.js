@@ -1,8 +1,5 @@
 // HTML OBJECTS
 const gridContainer = document.querySelector("#grid-container");
-const button16 = document.querySelector(".button16");
-const button32 = document.querySelector(".button32");
-const button64 = document.querySelector(".button64");
 
 // CREATES ALL THE DIVS WHEN PAGE IS LOADED
 for (let i = 0; i < 256; i++) {
