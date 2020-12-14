@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/index-style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/index-style.css" />
+  </head>
+  <body>
+    <div class="mid-container">
+      <h1>Etch-A-Sketch</h1>
+      <div id="grid-container"></div>
 
-    
-<div class="mid-container">
-    <h1>Etch-A-Sketch</h1>
-    <div id="grid-container"></div>
-    
-    <div class="buttons">
-        <h2 class="h2-buttons">Grid Layout</h2>
-        <input type="button" value="16x16" class="button16 button">
-        <input type="button" value="32x32" class="button32 button">
-        <input type="button" value="64x64" class="button64 button">
-        <input type="range" name="Grid Layout" id="grid-layout-slider" min="0" max="100" >
+      <div class="buttons">
+        <h2 class="h2-buttons">Pixel Size</h2>
+        <input
+          type="range"
+          name="Grid Layout"
+          id="grid-layout-slider"
+          min="1"
+          max="64"
+        />
+        <h2>Smallest to largest</h2>
+      </div>
     </div>
-</div>
 
-
-
-
-
-
-<script src="/scripts/index-script.js"></script>
-</body>
+    <script src="/scripts/index-script.js"></script>
+  </body>
 </html>

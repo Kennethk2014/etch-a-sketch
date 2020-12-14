@@ -1,50 +1,67 @@
-body{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: #353589;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #353589;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
 
-.mid-container{
-    text-align: center;
+.mid-container {
+  text-align: center;
 }
 
-.button{
-    cursor: pointer;
-    font-size: 1em;
-    font-weight: bold;
-    border-top: 3px solid black;
-    border-right: 3px solid black;
-    border-left: 3px solid rgb(79, 79, 79);
-    border-bottom: 3px solid rgb(79, 79, 79);
-    border-radius: 3px;
-    margin: 5px;
-    padding: 15px 20px;
-    background-color: #ffffff;
+.button {
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  border-top: 3px solid black;
+  border-right: 3px solid black;
+  border-left: 3px solid rgb(79, 79, 79);
+  border-bottom: 3px solid rgb(79, 79, 79);
+  border-radius: 3px;
+  margin: 5px;
+  padding: 15px 20px;
+  background-color: #ffffff;
 }
 
 #grid-container {
-    background-color: #fff;
-    border: 5px solid black;
-    border-radius: 3px;
-    display: inline-grid;
-    grid-template-columns: repeat(16, 2fr);
-    grid-template-rows: repeat(16, 2fr);
-    height: 50vh;
-    width: 450px;
+  background-color: #fff;
+  border: 5px solid black;
+  border-radius: 3px;
+  display: inline-grid;
+  grid-template-columns: repeat(16, 2fr);
+  grid-template-rows: repeat(16, 2fr);
+  height: 50vh;
+  width: 450px;
 }
 
-.inner-div{
-    border: 1px solid rgba(155, 155, 155, 0.5);
+.inner-div {
+  border: 0.1px solid rgba(155, 155, 155, 0.2);
 }
 
-.new-color{
-    background-color: green;
-    border: 1px solid rgba(155, 155, 155, 0.5);
+.new-color {
+  background-color: green;
+  border: 0.2px solid rgba(155, 155, 155, 0.2);
+}
+
+#grid-layout-slider {
+  appearance: none;
+  width: 300px;
+  height: 15px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgba(248, 248, 248, 0.3);
+}
+
+#grid-layout-slider::-webkit-slider-thumb {
+  appearance: none;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border: 1px solid white;
 }
